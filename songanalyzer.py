@@ -55,9 +55,8 @@ class Solution:
             else:
                 dict_allit.update({i[0]: dict_allit.get(i[0])+1})
                 
-            if len(i) > 3:
+            if len(i) >= 3:
                 if i[len(i)-3:] not in dict_end:
-                    print(i[len(i)-3:])
                     dict_end.update({i[len(i)-3:]: 1})
                 else:
                     dict_end.update({i[len(i)-3:]: dict_end.get(i[len(i)-3:])+1})   
